@@ -14,7 +14,7 @@ let rollback = 10;
 let allServicePrices, fullPrice, servicePercentPrice;
 
 const showTypeOf = function(variable) {
-    console.log(variable, typeof variable)
+    console.log(variable, typeof variable);
 }
 
 const getRollbackMessage = function(price) {
@@ -42,7 +42,7 @@ function getTitle(text) {
 }
 
 const getServicePercentPrices = function(fullPrice, rollback) {
-    return fullPrice - (fullPrice * (rollback/100))
+    return fullPrice - (fullPrice * (rollback/100));
 }
 
 allServicePrices = getAllServicePrices(servicePrice1, servicePrice2);
@@ -52,8 +52,7 @@ showTypeOf(getTitle(title));
 showTypeOf(screenPrice);
 showTypeOf(adaptive);
 
-console.log(screens)
+console.log(screens);
 
 console.log(getRollbackMessage(fullPrice));
 console.log(getServicePercentPrices(fullPrice, rollback));
-
